@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(22, 71, 22);
+}
+.container {
+  display: grid;
+  grid-template-rows: 85% 13% ;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.top {
+  /* border: 2px solid red; */
+  display: inline;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: auto;
+  padding: 5px;
+  border-bottom: 2px solid brown;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;  
+}
+.text {
+  background-color: rgb(170, 151, 42);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 10px 5px;
+  font-size: 18px;
+  font-family: sans-serif;
+  height: 200px;
+  width: 23%;
+  margin: 3px;
+  resize: none;
+}
+.btn {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 5em;
+  background: rgba(90, 97, 90, 0.4);
+  outline: none;
+  border: none;
+  color: rgb(41, 39, 39);
+  margin: 5px;
+}
+
+.material-icons {
+  font-size: 50px;
+}
+.text:focus {
+  border: 5px solid brown;
+  
+}
+
+::-webkit-scrollbar {
+   border: none;
+}
+::-webkit-scrollbar-button {
+   display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: brown;
+  border-radius: 15px;
+  
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 15px;
+  left: 50%;
+  top: 45%;
+  width: 80%;
+  transform: translate(-50%);
+  position: absolute;
+}
+
+.copyrights {
+  color: wheat;
+  font-size: 15px;
+  position: fixed;
+  right: 1%;
+  bottom: 0;
+ 
+}
+
+@media only screen and (min-device-width: 50px) and (orientation: portrait) {
+   .text {
+     width: 90%;
+   }
+  }
+
+@media only screen and (min-device-width: 300px) and (orientation: portrait) {
+  .top {
+    display: block;
+    justify-content: center;
+    padding: 5px 0;
+  }
+   .text {
+     width: 45%;
+   }
+  }
+@media only screen and (min-device-width: 851px) and (orientation: landscape) {
+   /* Your Styles... */ 
+  }
+  
